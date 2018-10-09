@@ -1,8 +1,9 @@
 module.exports = function getZerosCount(number) {
-  var factorial = 0;
+  let zerosQuantity = 0;
 
-    for (var i = 5; number/i >= 1; i *= 5) {
-        factorial += Math.floor(number/i); 
+    for (let i = 5; number / i >= 1; i *= 5) {
+      zerosQuantity += Math.floor(number / i); 
     } 
-  return factorial;
+
+  return zerosQuantity;
 }
